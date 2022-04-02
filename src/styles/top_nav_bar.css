@@ -1,6 +1,9 @@
 .top_nav_bar_container {
     padding: 6px;
     overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
 }
 
 .mobile_nav_bar {
@@ -67,6 +70,7 @@
     height: 100%;
     background: linear-gradient(45deg, rgba(1, 162, 231, 0.829), #01050fe8);
     overflow: hidden;
+    z-index: 100;
 }
 
 .mob_open_class {
@@ -185,10 +189,11 @@
     display: flex;
     /* display: none; */
     flex-direction: row-reverse;
+    align-items: center;
 }
 
 .main_nav_btn {
-    border: none;
+    border: 2px solid rgb(1, 161, 231);;
     border-radius: 6px;
     padding: 8px 12px;
     margin-right: 8px;
@@ -205,7 +210,6 @@
 .apply {
     background-color: rgb(1, 161, 231);
     color: #fff;
-    border: 3px solid rgb(1, 161, 231);
 }
 
 .apply:hover,
@@ -218,7 +222,6 @@
 .signUp {
     background-color: #01050f00;
     color: rgb(1, 161, 231);
-    border: 3px solid rgb(1, 161, 231);
 }
 
 .login:hover,
@@ -227,6 +230,12 @@
 .signUp:focus {
     background-color: rgb(1, 161, 231);
     color: #01050f;
+}
+
+.accounts_icon {
+    color: rgb(1, 161, 231);
+    margin-right: 6px;
+    display: none;
 }
 
 .mnmi_links {
@@ -265,6 +274,43 @@
     /* .main_nav_brand {
         width: 150px;
     } */
+}
+@media (max-width: 1120px) {
+    /* .mnmi_btns {
+        display: none;
+    } */
+
+    .main_nav_btn {
+        padding: 6px 8px;
+        margin-right: 8px;
+        width: 118px;
+    }
+}
+@media (max-width: 1080px) {
+    .apply,
+    .login,
+    .signUp {
+        display: none;
+    }
+
+    .accounts_icon {
+        color: rgb(1, 161, 231);
+        margin-right: 12px;
+        display: block;
+    }
+}
+@media (max-width: 760px) {
+    .openMainLink {
+        font-size: 12px;
+    }
+}
+@media (max-width: 680px) {
+    .mobile_nav_bar {
+        display: flex;
+    }
+    .main_nav_bar {
+        display: none;
+    }
 }
 
 .openMainLink:hover,

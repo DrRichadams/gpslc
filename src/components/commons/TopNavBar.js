@@ -68,6 +68,7 @@ const TopNavBar = () => {
                                 </button>
                             ))
                         }
+                        <FiLock className="accounts_icon" size={25} />
                     </div>
                 </nav>
             </div>
