@@ -1,0 +1,16 @@
+@font-face {
+    font-family: goldplay;
+    src: url("../public/fonts/Goldplay\ Light.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+}
