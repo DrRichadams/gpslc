@@ -1,9 +1,11 @@
 .top_nav_bar_container {
     padding: 6px;
+    overflow: hidden;
 }
 
 .mobile_nav_bar {
-    display: flex;
+    /* display: flex; */
+    display: none;
     justify-content: space-between;
     align-items: center;
 }
@@ -64,6 +66,7 @@
     width: 0%;
     height: 100%;
     background: linear-gradient(45deg, rgba(1, 162, 231, 0.829), #01050fe8);
+    overflow: hidden;
 }
 
 .mob_open_class {
@@ -110,4 +113,185 @@
 
 .mcm_contents {
     position: absolute;
+    width: 100%;
+    margin-top: 80px;
+    padding: 0 30px;
+}
+
+.mcmc_btn {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+    color: #01050f;
+    margin: 12px 0;
+    padding: 8px 15px;
+    border-radius: 6px;
+}
+
+.mcmc_btn p {
+    font-family: goldplay;
+    font-weight: 900;
+}
+
+.mcmc_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #f5f5f5;
+    font-family: Quicksand, sans-serif;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+
+/* STYLING THE MAIN NAVIGATION MENU */
+
+/* .mnmi_links li {
+    list-style: none;
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+} */
+
+.main_nav_bar {
+    width: 100%;
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 200px 4fr;
+}
+
+.main_nav_brand {
+    width: 150px;
+}
+
+.main_nav_brand img {
+    width: 100%;
+}
+
+.main_nav_menu_items {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.mnmi_btns {
+    display: flex;
+    /* display: none; */
+    flex-direction: row-reverse;
+}
+
+.main_nav_btn {
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    margin-right: 8px;
+    font-family: Quicksand;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 130px;
+    cursor: pointer;
+}
+
+.apply {
+    background-color: rgb(1, 161, 231);
+    color: #fff;
+    border: 3px solid rgb(1, 161, 231);
+}
+
+.apply:hover,
+.apply:focus {
+    background-color: transparent;
+    color: rgb(1, 161, 231);
+}
+
+.login,
+.signUp {
+    background-color: #01050f00;
+    color: rgb(1, 161, 231);
+    border: 3px solid rgb(1, 161, 231);
+}
+
+.login:hover,
+.signUp:hover,
+.login:focus,
+.signUp:focus {
+    background-color: rgb(1, 161, 231);
+    color: #01050f;
+}
+
+.mnmi_links {
+    display: flex;
+    margin-left: 50px;
+}
+
+.openMainLink {
+    list-style: none;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 8px;
+    /* background-color: red; */
+    color: #01050f8c;
+    padding: 8px;
+    text-transform: uppercase;
+    /* border-bottom: 5px solid rgb(1, 161, 231); */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+@media (max-width: 1260px) {
+    .openMainLink {
+        font-size: 18px;
+    }
+}
+@media (max-width: 1220px) {
+    .openMainLink {
+        font-size: 15px;
+        margin-right: 5px;
+        padding: 6px;
+    }
+
+    /* .main_nav_brand {
+        width: 150px;
+    } */
+}
+
+.openMainLink:hover,
+.openMainLink:focus {
+    opacity: .5;
+}
+
+.openMainLink_open::after {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: rgb(1, 161, 231);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform-origin: center;
+    transform: scaleX(0);
+    animation: animMainNav 0.45s ease forwards;
+}
+
+/* .openMainLink {
+    color: rgb(1, 161, 231);
+    animation: animMainNav 0.45s ease forwards;
+} */
+
+@keyframes animMainNav {
+    to {
+        transform: scaleX(1);
+    }
 }
