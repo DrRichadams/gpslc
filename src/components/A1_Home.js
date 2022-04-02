@@ -12,12 +12,12 @@ const A1_Home = () =>{
                         <p className="banner_message">{item}</p>
                      ))
                  }
-                 <button className="apply_btn">
-                     <CgArrowLongRight size={20} />
-                     <p>APPLY NOW</p>
-                     <CgArrowLongRight size={20} />
-                 </button>
              </div>
+                 <button className="apply_btn">
+                     <CgArrowLongRight size={25} />
+                     <p>APPLY NOW</p>
+                     <CgArrowLongLeft size={25} />
+                 </button>
         </div>
     )
 }
