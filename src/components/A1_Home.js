@@ -6,18 +6,21 @@ const A1_Home = () =>{
     console.log(banner_message)
     return(
         <div className="home_container">
-             <div className="banner_message_container">
-                 {
-                     banner_message.map((item, index) => (
-                        <p className="banner_message">{item}</p>
-                     ))
-                 }
+             <div className="banner_home_container">
+                <div className="banner_message_container">
+                    {
+                        //  banner_message.map((item, index) => (
+                        //     <p className="banner_message">{item}</p>
+                        //  ))
+                    }
+                    Global Procurement Supply and Logistics
+                </div>
+                    <button className="apply_btn">
+                        <CgArrowLongRight size={25} />
+                        <p>APPLY NOW</p>
+                        <CgArrowLongLeft size={25} />
+                    </button>
              </div>
-                 <button className="apply_btn">
-                     <CgArrowLongRight size={25} />
-                     <p>APPLY NOW</p>
-                     <CgArrowLongLeft size={25} />
-                 </button>
         </div>
     )
 }
