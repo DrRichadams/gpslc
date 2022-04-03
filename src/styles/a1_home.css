@@ -3,6 +3,7 @@
     min-height: 100vh;
     background-color: #01050fbb;
     padding-top: 60px;
+    margin-bottom: 60px;
     background: linear-gradient(rgba(36, 40, 80, 0.745), rgba(0, 88, 126, 0.5)), url("./../../public/resources/banner.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,3 +62,64 @@
     display: inline-block;
 } */
 
+.home_about_container {
+    padding: 12px;
+}
+
+.about_home_title {
+    font-family: oswald;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.userName {
+    font-family: Lato, sans-serif;
+    font-weight: bolder;
+    margin: 20px 0 6px 0;
+}
+
+.home_about_message {
+    font-family: goldplay;
+    font-weight: 900;
+    margin-bottom: 35px;
+}
+
+.about_home_contacts_title {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.about_home_contacts{
+    margin-bottom: 35px;
+}
+
+.about_home_contacts div {
+    background-color: #01050f;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 6px;
+    padding: 6px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about_home_contacts div p{
+    font-family: goldplay;
+    /* margin-left: 12px; */
+    text-align: right;
+}
+
+.home_about_img {
+    /* background-color: red; */
+    /* margin: 15px 0; */
+    
+}
+
+.home_about_img img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 6px 0 24px rgba(36, 40, 80, 0.479);
+}
