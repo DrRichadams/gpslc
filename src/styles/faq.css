@@ -1,0 +1,59 @@
+.faq_container {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.faq_box {
+    width: 100%;
+}
+
+.faq_question_box {
+    background-color: rgb(1, 161, 231);
+    color: #fff;
+    padding: 8px;
+    border-radius: 3px;
+    font-family: Quicksand, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_answer_box {
+    padding: 6px;
+    overflow: hidden;
+    height: 0px;
+}
+
+.open_faq_box {
+    animation: animeAnswer 300ms ease forwards;
+}
+
+@keyframes animeAnswer {
+    from{
+        height: 0px;
+    }
+    to{
+        height: 260px;
+    }
+}
+
+.faqb_que {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    margin: 12px 0 3px 0;
+}
+
+.faqb_ans {
+    font-family: goldplay;
+    font-weight: 900;
+}
+
+.faq_main_title {
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
+    margin: 30px 0 12px 0;
+}

@@ -100,7 +100,7 @@
     color: #fff;
     margin-bottom: 5px;
     border-radius: 6px;
-    padding: 6px 8px;
+    padding: 6px 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -108,6 +108,7 @@
 
 .about_home_contacts div p{
     font-family: goldplay;
+    font-size: 13px;
     /* margin-left: 12px; */
     text-align: right;
 }

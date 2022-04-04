@@ -1,6 +1,7 @@
 import './App.css'
 import "./a1_home.css"
 import "./top_nav_bar.css"
+import "./faq.css"
 
 const Styles_importer = () => {
     return null
