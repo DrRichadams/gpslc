@@ -82,6 +82,7 @@ const TopNavBar = () => {
                                 <div className={item.type == "link" ? "mcmc_box" : "mcmc_btn"} onClick={() => {
                                     navigate(`/${item.path}`)
                                     triggerMenuItems(item.id)
+                                    setOpenMenu(false)
                                 }}>
                                     <p>{item.name}</p>
                                     { !item.active ? <FiPlus size={25} /> : <FiMinus size={25} /> }

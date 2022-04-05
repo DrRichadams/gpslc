@@ -32,7 +32,7 @@ const FAQ = () => {
     }
 
     return(
-        <div className="faq_container">
+        <div className="faq_container" id="faq">
             <h3 className="faq_main_title const_title_color">Frequently Asked Questions</h3>
             {
                 faq.map((item, index) => (

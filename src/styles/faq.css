@@ -26,18 +26,22 @@
     padding: 6px;
     overflow: hidden;
     height: 0px;
+    transform-origin: top;
+    transform: scaleX(0);
 }
 
 .open_faq_box {
-    animation: animeAnswer 300ms ease forwards;
+    animation: animeAnswer 500ms ease-in-out forwards;
 }
 
 @keyframes animeAnswer {
     from{
         height: 0px;
+        transform: scaleX(0);
     }
     to{
         height: 260px;
+        transform: scaleX(1);
     }
 }
 
