@@ -3,9 +3,16 @@ import {FaLongArrowAltRight} from "react-icons/fa"
 import {FiChevronLeft, FiChevronRight} from "react-icons/fi"
 
 const UpcomingEvents = () => {
+    const [ events ] = useState([
+        1,2,3,4,5
+    ])
     const [ currentEvent, setCurrentEvent ] = useState(3)
     const eventCounterTrigger = (counter) => {
         setCurrentEvent(counter);
+    }
+    const changeEvent = (direction) => {
+        if(direction === "left") if(currentEvent !== 1) setCurrentEvent(currentEvent - 1)
+        if(direction === "right") if(currentEvent !== events.length) setCurrentEvent(currentEvent + 1)
     }
     return(
         <div className="upcoming_events_container">
@@ -13,8 +20,8 @@ const UpcomingEvents = () => {
             <div className="up_events_boxes">
                <div className="up_event_box">
                 <div className="up_event">
-                        <img src="" alt="" />
-                        <h3>Logistics Talks</h3>
+                        <img src={process.env.PUBLIC_URL + `events/event1.jpg`} alt="" />
+                        <h3 className="const_title_color">Logistics Talks</h3>
                         <div className="event_date_time">
                             <p className="edt_date">April 12</p>
                             <p className="edt_time">1400hrs</p>
@@ -27,8 +34,8 @@ const UpcomingEvents = () => {
                     </div>
                 <div className="up_event_box_controls">
                     <div className="top_event_controls">
-                        <FiChevronLeft size={35} className="event_control_btn" />
-                        <FiChevronRight size={35} className="event_control_btn" />
+                        <FiChevronLeft onClick={() => changeEvent("left")} size={35} className="event_control_btn" />
+                        <FiChevronRight onClick={() => changeEvent("right")} size={35} className="event_control_btn" />
                     </div>
                     <div className="bottom_event_controls">
                         {
