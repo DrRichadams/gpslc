@@ -15,6 +15,7 @@ const TopNavBar = () => {
         { id: uuidv4(), active: false, name: "Events", path: "events", type: "link" },
         { id: uuidv4(), active: false, name: "About", path: "about", type: "link" },
         { id: uuidv4(), active: false, name: "Contact", path: "contact", type: "link" },
+        { id: uuidv4(), active: false, name: "Blog", path: "blog", type: "link" },
         { id: uuidv4(), active: false, name: "F.A.Q", path: "faq", type: "link" },
         { id: uuidv4(), active: false, name: "APPLY NOW", path: "apply", type: "button" },
         { id: uuidv4(), active: false, name: "LOGIN", path: "login", type: "button" },

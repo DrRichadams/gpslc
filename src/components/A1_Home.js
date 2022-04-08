@@ -2,10 +2,9 @@ import React, { useState } from "react"
 import { CgArrowLongRight, CgArrowLongLeft } from "react-icons/cg"
 import { MdOutlineMyLocation, MdMarkEmailRead, MdCall } from "react-icons/md"
 import FAQ from "./commons/FAQ"
+import UpcomingEvents from "./features/UpcomingEvents"
 
 const A1_Home = () =>{
-    let banner_message = "Global Procurement Supply and Logistics Centre".split(" ")
-    console.log(banner_message)
     return(
         <div className="home_container">
              <div className="banner_home_container">
@@ -15,7 +14,9 @@ const A1_Home = () =>{
                         //     <p className="banner_message">{item}</p>
                         //  ))
                     }
-                    Global Procurement Supply and Logistics
+                    <h3>Global Procurement Supply and Logistics Centre</h3>
+                    <p>The school of procurement and <span>CIPS</span> qualifications</p>
+                    <p className="csc_title">CERTIFIED STUDY CENTRE</p>
                 </div>
                     <button className="apply_btn">
                         <CgArrowLongRight size={25} />
@@ -42,6 +43,7 @@ const A1_Home = () =>{
                      <img src={process.env.PUBLIC_URL + `/resources/about_us.png`} alt="" />
                  </div>
              </div>
+             <UpcomingEvents />
              <FAQ />
         </div>
     )
