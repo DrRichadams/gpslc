@@ -2,6 +2,9 @@ import React, { useState } from "react"
 import { CgArrowLongRight, CgArrowLongLeft } from "react-icons/cg"
 import { MdOutlineMyLocation, MdMarkEmailRead, MdCall } from "react-icons/md"
 import FAQ from "./commons/FAQ"
+import ApplyNow from "./features/ApplyNow"
+import CipsQualifications from "./features/CipsQualifications"
+import ShortCourses from "./features/ShortCourses"
 import UpcomingEvents from "./features/UpcomingEvents"
 
 const A1_Home = () =>{
@@ -43,6 +46,9 @@ const A1_Home = () =>{
                      <img src={process.env.PUBLIC_URL + `/resources/about_us.png`} alt="" />
                  </div>
              </div>
+             <ApplyNow />
+             <CipsQualifications />
+             <ShortCourses />
              <UpcomingEvents />
              <FAQ />
         </div>

@@ -1,0 +1,194 @@
+.short_courses_container {
+    /* background-color: red; */
+    padding: 18px;
+    margin-top: 80px;
+}
+
+.short_courses_part1_title {
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
+    color: rgb(1,161,231);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.short_courses_story {
+    font-family: goldplay;
+    font-weight: 900;
+    margin-bottom: 15px;
+}
+
+.short_courses_part1_btn {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: rgb(1,161,231);
+    border: 2px solid rgb(1,161,231);
+    border-radius: 6px;
+    outline: none;
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.short_courses_part1_btn:hover,
+.short_courses_part1_btn:focus {
+    background-color: rgb(1,161,231);
+    color: #fff;
+}
+
+.short_courses_part2 {
+    margin-top: 20px;
+    background: linear-gradient(rgba(36, 40, 80, 0.863), rgba(1,161,231,0.7)), url("../../public/resources/courses.png");
+    /* background: url("../../public/resources/courses.png"); */
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.courseUp {
+    transition-delay: 0.5s;
+    animation: animateCourseUp 0.45s linear;
+}
+.courseDown {
+    animation: animateCourseDown 0.45s linear;
+}
+
+@keyframes animateCourseUp {
+    from {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes animateCourseDown {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.7);
+    }
+}
+
+.short_course_brand_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    padding: 6px;
+    border-radius: 6px;
+    /* background-color: #ffffff; */
+}
+
+.short_course_brand_box img {
+    width: 150px;
+}
+
+.course_counter_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.course_counter_deveder {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+}
+
+.current_course_counter,
+.max_course_counter {
+    font-family: Oswald, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    padding-right: 6px;
+    color: #fff;
+}
+
+.short_course_name {
+    color: #fff;
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
+    margin: 20px 0 8px;
+}
+
+.short_course_duration_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+.short_course_duration_title {
+    font-weight: 900;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+}
+
+.short_course_duration {
+    display: flex;
+    align-items: center;
+}
+
+.short_course_duration p {
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+.short_course_benefits_title {
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+    font-weight: 800;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.short_course_benefits_title::after {
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+}
+
+.short_course_benefits_content {
+    margin: 20px 0 12px 0;
+}
+
+.short_course_benefits_content li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+}
+
+.short_course_benefits_content li p {
+    font-family: Poppins, sans-serif;
+}
+
+.short_courses_controls {
+    /* background-color: red; */
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.short_course_control_icon:hover,
+.short_course_control_icon:focus {
+    color: #01050f;
+}

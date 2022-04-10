@@ -1,0 +1,103 @@
+.apply_now_container {
+    /* background-color: red; */
+    padding: 18px;
+}
+
+.apply_now_title {
+    /* background-color: red; */
+    padding: 8px;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
+}
+
+.apply_now_top img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.apply_now_bottom {
+    margin-top: 12px;
+}
+
+.apply_now_bottom img {
+    width: 140px;
+}
+
+.apply_now_btn_container {
+    display: flex;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.apply_now_btn {
+    margin-top: 20px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 120px;
+    padding: 8px;
+    color: rgb(1, 161, 231);
+}
+
+.apply_now_btn p {
+    font-weight: 900;
+    font-family: Lato, sans-serif;
+}
+
+.apply_now_btn:hover,
+.apply_now_btn:focus {
+    color: #01050f;
+}
+
+.motto {
+    font-family: Lato, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: left;
+    opacity: .5;
+}
+
+.apply_college_name {
+    font-family: Oswald, sans-serif;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 20px;
+    margin: 12px 0;
+    color: #005c633d;
+}
+
+.apply_now_story {
+    background-color: #f5f5f5;
+    padding: 6px;
+    border-radius: 6px;
+    font-family: goldplay;
+    font-weight: 900;
+    margin-bottom: 8px;
+}
+
+.motto2 {
+    text-align: center;
+    margin: 15px 0 10px 0;
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    color: rgba(62, 108, 126, 0.527);
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.motto2::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 45%;
+    height: 3px;
+    background-color: rgba(62, 108, 126, 0.527);
+}
