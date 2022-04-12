@@ -69,7 +69,7 @@ const UpcomingEvents = () => {
                                 display: index + 1 === currentEvent 
                                 ? "block":"none"
                             }}>
-                                <img src={process.env.PUBLIC_URL + `events/${item.img ? item.img: "default"}.png`} alt="" />
+                                <img src={process.env.PUBLIC_URL + `events/${item.img}.png`} alt="" />
                                 <h3 className="const_title_color">{item.title}</h3>
                                 <div className="event_date_time">
                                     <div className="up_event_date">

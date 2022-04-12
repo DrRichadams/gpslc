@@ -1,6 +1,7 @@
 import './App.css'
 import "./a1_home.css"
 import "./a2_services.css"
+import "./a3_events.css"
 import "./top_nav_bar.css"
 import "./faq.css"
 import "./footer.css"

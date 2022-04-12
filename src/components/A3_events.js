@@ -1,5 +1,8 @@
 import React, { useState } from "react"
 import { v1 as uuidv4 } from "uuid"
+import BigTitle from "./utils/BigTitle"
+import { BsCalendarCheckFill } from "react-icons/bs"
+import { FaLongArrowAltRight } from "react-icons/fa"
 
 const A3_events = () => {
     const [ events ] = useState([
@@ -46,7 +49,32 @@ const A3_events = () => {
     ])
     return(
         <div className="a3_events_container">
-            EVENTS
+            <div className="up_events_title const_title_color">Up Coming Events</div>
+                <div className="up_event_box">
+                {
+                    events.map((item, index) => (
+                        <div 
+                            key={item.id}
+                            className="up_event up_event_open_effect a3_event_box_content"
+                            >
+                                <img src={process.env.PUBLIC_URL + `events/${item.img}.png`} alt="" />
+                                <h3 className="const_title_color">{item.title}</h3>
+                                <div className="event_date_time">
+                                    <div className="up_event_date">
+                                        <BsCalendarCheckFill size={20} />
+                                        <p className="edt_date">{item.date}</p>
+                                    </div>
+                                    <p className="edt_time">{item.time}</p>
+                                </div>
+                                <p className="up_event_story">{item.story}</p>
+                                <div className="event_details_btn">
+                                    <p>Details</p>
+                                    <FaLongArrowAltRight className="details_icon" />
+                                </div>
+                            </div>
+                    ))
+                }
+                </div>
         </div>
     )
 }
