@@ -2,3 +2,129 @@
     /* background-color: red; */
     padding: 18px;
 }
+
+
+.cqc_title {
+    font-family: Oswald, sans-serif;
+    color: rgb(1, 161, 231);
+    font-size: 25px;
+    margin: 80px 0 25px 0;
+}
+
+.cqc_story {
+    font-family: Poppins, sans-serif;
+    margin-bottom: 25px;
+}
+
+.cqc_qualifications {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.cqc_qualification_box {
+    /* background-color: red; */
+    box-shadow: 6px 0 24px #01050f3a;
+    padding: 25px 15px;
+    border-radius: 6px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cqc_qualification_box::after {
+    content: "";
+    width: 200px;
+    height: 200px;
+    background-color: rgba(1, 162, 231, 0.336);
+    position: absolute;
+    bottom: -40px;
+    right: -50px;
+    /* border: 40px solid #f5f5f5; */
+    border-radius: 50%;
+    box-shadow: 6px 0 24px rgba(1, 162, 231, 0.712);
+    opacity: .8;
+}
+
+.cqcqb_modules {
+    position: relative;
+    z-index: 100;
+}
+
+.cqcqb_title_name {
+    font-family: Lato, sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(0, 0, 129);
+}
+
+.cqcqb_module_apply {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.cqcqb_module_apply h4 {
+    font-weight: 800;
+    font-family: Lato, sans-serif;
+    text-transform: uppercase;
+    font-size: 15px;
+
+}
+
+.module_box {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    gap: 15px;
+}
+
+.module_num {
+    background-color: rgb(36, 40, 100);
+    color: #f5f5f5;
+    width: 50px;
+    height: 50px;
+    border-radius: 6px;
+    font-family: Oswald, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.module_num::after {
+    content: "";
+    width: 35px;
+    height: 35px;
+    background-color: rgb(1, 161, 231);
+    transform: rotateZ(45deg);
+    position: absolute;
+    top: -40%;
+    right: -40%;
+}
+
+.module_name {
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    /* background-color: red; */
+}
+
+.course_apply_btn {
+    border: 2px solid rgb(1, 161, 231);
+    background-color: rgb(1, 161, 231);
+    color: #f5f5f5;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.course_apply_btn:hover,
+.course_apply_btn:focus {
+    background-color: transparent;
+    color: rgb(1, 161, 231);
+}
