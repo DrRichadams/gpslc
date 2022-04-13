@@ -26,7 +26,7 @@ const A1_Home = () =>{
                         <p>APPLY NOW</p>
                         <CgArrowLongLeft size={25} />
                     </button>
-             </div>
+             </div> 
              <div className="home_about_container">
                  <div className="home_about_texts">
                      <h3 className="about_home_title const_title_color">About Us</h3>

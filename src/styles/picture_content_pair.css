@@ -1,0 +1,25 @@
+.picture_content_pair_container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_aligned{
+    flex-direction: row;
+}
+.left_aligned{
+    flex-direction: row-reverse;
+}
+.pcp_first img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .right_aligned{
+        flex-direction: column;
+    }
+    .left_aligned{
+        flex-direction: column-reverse;
+    }
+}

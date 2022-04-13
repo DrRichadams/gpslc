@@ -49,6 +49,13 @@ const A3_events = () => {
     ])
     return(
         <div className="a3_events_container">
+            <div className="a3_events_banner">
+                <img src={process.env.PUBLIC_URL + `events/events_banner.png`} alt="" />
+                <div className="a3_events_banner_content">
+                    <h3 className="a3_events_banner_title">Something not to miss</h3>
+                    <p className="a3_events_banner_story">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eius voluptatibus totam, molestiae quaerat vel aliquid.</p>
+                </div>
+            </div>
             <div className="up_events_title const_title_color">Up Coming Events</div>
                 <div className="up_event_box">
                 {
