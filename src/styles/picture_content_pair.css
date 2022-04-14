@@ -2,7 +2,9 @@
     display: flex;
     gap: 30px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    padding: 12px;
+    margin: 50px 0 120px 0;
 }
 
 .right_aligned{
@@ -13,6 +15,12 @@
 }
 .pcp_first img {
     width: 100%;
+    border-radius: 6px;
+}
+
+.pcp_first,
+.pcp_second {
+    flex: 1;
 }
 
 @media (max-width: 600px) {
@@ -22,4 +30,14 @@
     .left_aligned{
         flex-direction: column-reverse;
     }
+}
+
+.list_any {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.list_any p {
+    font-family: Lato, sans-serif;
 }
