@@ -66,7 +66,7 @@ const ShortCourses = () => {
                 { id: uuidv4(), benefit: "course materials" },
                 { id: uuidv4(), benefit: "practical skills" },
                 { id: uuidv4(), benefit: "knowledge and certificate of attendance" },
-            ]
+            ] 
         },
     ])
     const shiftCourse = (dir) => {

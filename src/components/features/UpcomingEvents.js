@@ -48,7 +48,7 @@ const UpcomingEvents = () => {
         },
     ])
     const [ currentEvent, setCurrentEvent ] = useState(1)
-    const eventCounterTrigger = (counter) => {
+    const eventCounterTrigger = (counter) => { 
         setCurrentEvent(counter);
     }
     const changeEvent = (direction) => {
@@ -59,6 +59,11 @@ const UpcomingEvents = () => {
         <div className="upcoming_events_container">
             <div className="up_events_title const_title_color">Up Coming Events</div>
             <div className="up_events_boxes">
+                <div className="up_event_titles">
+                    <h3>What to expect from our events</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illum ullam perspiciatis at laboriosam voluptate molestiae vero suscipit atque reiciendis dicta, beatae placeat nobis aperiam aliquid nostrum aut error expedita.</p>
+                    <button className="up_events_btn_more">Explore Events</button>
+                </div>
                <div className="up_event_box">
                 {
                     events.map((item, index) => (
@@ -105,7 +110,7 @@ const UpcomingEvents = () => {
                 </div>
                </div>
             </div>
-            <button className="up_events_btn_more">Explore Events</button>
+            {/* <button className="up_events_btn_more">Explore Events</button> */}
         </div>
     )
 }

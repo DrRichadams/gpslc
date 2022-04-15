@@ -1,10 +1,10 @@
 import React from "react"
 import { FaLongArrowAltRight } from "react-icons/fa"
 
-const ApplyNow = () => {
+const ApplyNow = () => { 
     return(
         <div className="apply_now_container">
-            <h3 className="apply_now_title const_title_color">APPLY NOW</h3>
+            {/* <h3 className="apply_now_title const_title_color">APPLY NOW</h3> */}
             <div className="apply_now_top">
                 <img src={process.env.PUBLIC_URL + `resources/apply_now.png`} alt="" />
             </div>

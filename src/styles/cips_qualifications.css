@@ -7,7 +7,7 @@
 .cqc_title {
     font-family: Oswald, sans-serif;
     color: rgb(1, 161, 231);
-    font-size: 25px;
+    font-size: 25px; 
     margin: 80px 0 25px 0;
 }
 
@@ -127,4 +127,38 @@
 .course_apply_btn:focus {
     background-color: transparent;
     color: rgb(1, 161, 231);
+}
+
+@media (min-width: 600px) {
+    .cips_qualifications_container {
+        padding: 50px;
+    }
+}
+@media (min-width: 830px) {
+    .cips_qualifications_container {
+        padding: 80px;
+    }
+    .cqc_qualifications {
+        /* grid-template-columns: 1fr 1fr;
+        gap: 50px; */
+    }
+}
+
+@media (min-width: 830px) {
+    /* .cips_qualifications_container {
+        padding: 80px;
+    } */
+    .cqc_qualifications {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+@media (min-width: 1300px) {
+    /* .cips_qualifications_container {
+        padding: 80px;
+    } */
+    .cqc_qualifications {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+    }
 }

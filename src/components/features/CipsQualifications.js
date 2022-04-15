@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from "uuid"
 const CipsQualifications = () => {
     const [ cipsQualifications, setCipsQualifications ] = useState([
         {
-            id: uuidv4(),
+            id: uuidv4(), 
             level: "2",
             type: "Certificate",
             modules: [

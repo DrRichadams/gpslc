@@ -47,7 +47,7 @@ const FAQ = () => {
                         </div>
                     </div>
                 ))
-            }
+            } 
         </div>
     )
 }

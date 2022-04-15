@@ -6,7 +6,7 @@ import ApplyNow from "./features/ApplyNow"
 import CipsQualifications from "./features/CipsQualifications"
 import ShortCourses from "./features/ShortCourses"
 import UpcomingEvents from "./features/UpcomingEvents"
-
+ 
 const A1_Home = () =>{
     return(
         <div className="home_container">
@@ -38,14 +38,15 @@ const A1_Home = () =>{
                      <div className="about_home_contacts">
                          <h4 className="about_home_contacts_title const_title_color">Reach us and start your awesome journey</h4>
                          <div><MdOutlineMyLocation size={25} /><p>123 Sam Nujoma Avenue, Windhoek Namibia</p></div>
-                         <div><MdMarkEmailRead size={25} /><p>proxyserver7798@gmail.com</p></div>
-                         <div><MdCall size={25} /><p>+263 813 694 757</p></div>
+                         <div><MdMarkEmailRead size={25} /><p>helpdesk@gptrainingcentre.com</p></div>
+                         <div><MdCall size={25} /><p>+264 816 757 735</p></div>
                      </div>
                  </div>
                  <div className="home_about_img">
                      <img src={process.env.PUBLIC_URL + `/resources/about_us.png`} alt="" />
                  </div>
              </div>
+             <h3 className="apply_now_title const_title_color">APPLY NOW</h3>
              <ApplyNow />
              <CipsQualifications />
              <ShortCourses />

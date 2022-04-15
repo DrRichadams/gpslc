@@ -2,6 +2,7 @@
     /* background-color: red; */
     padding: 18px;
     margin-top: 80px;
+    /* border: 2px solid rgb(1, 161, 231); */
 }
 
 .upcoming_events_container {
@@ -38,6 +39,7 @@
     border-radius: 6px;
     color: rgb(1, 161, 231);
     padding: 8px 25px;
+    margin: 50px 0;
     background-color: transparent;
     font-family: Lato, sans-serif;
     font-size: 17px;
@@ -117,7 +119,7 @@
     margin-bottom: 12px;
 }
 
-.up_event_story {
+.up_event_story { 
     font-family: Lato, sans-serif;
     font-weight: 400;
 }
@@ -195,4 +197,33 @@
 
 .up_event_box_controls {
     /* background-color: red; */
+}
+
+.up_event_titles h3 {
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.up_event_titles p {
+    font-family: Lato, sans-serif;
+}
+
+@media (min-width: 650px) {
+    .upcoming_events_container {
+        /* background-color: red; */
+        padding: 50px;
+    }
+}
+@media (min-width: 840px) {
+    .upcoming_events_container {
+        /* background-color: red; */
+        padding: 100px;
+    }
+}
+@media (min-width: 1000px) {
+    .up_events_boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
 }
