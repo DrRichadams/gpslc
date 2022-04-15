@@ -17,11 +17,11 @@ const A1_Home = () =>{
                         //     <p className="banner_message">{item}</p>
                         //  ))
                     }
-                    <h3>Global Procurement Supply and Logistics Centre</h3>
-                    <p>The school of procurement and <span>CIPS</span> qualifications</p>
+                    <h3 className="csc_title_origin">Global Procurement Supply and Logistics Centre</h3>
+                    <p className="csc_title_0">The school of procurement and <span>CIPS</span> qualifications</p>
                     <p className="csc_title">CERTIFIED STUDY CENTRE</p>
                 </div>
-                    <button className="apply_btn">
+                    <button className="apply_btn apply_animated">
                         <CgArrowLongRight size={25} />
                         <p>APPLY NOW</p>
                         <CgArrowLongLeft size={25} />

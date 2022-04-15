@@ -47,7 +47,7 @@ const A3_events = () => {
             img: "wealth_talks",
         },
     ])
-    return(
+    return( 
         <div className="a3_events_container">
             <div className="a3_events_banner">
                 <img src={process.env.PUBLIC_URL + `events/events_banner.png`} alt="" />

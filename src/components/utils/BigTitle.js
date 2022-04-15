@@ -7,7 +7,7 @@ const BigTitle = ({title, size, color}) => {
             fontSize: size === "sm" 
                 ? "20px"
                 : size === "md" 
-                ? "25px": size ==="bg" ? "30px": "10px",
+                ? "25px": size ==="bg" ? "30px": size==="vbg" ? "50px": "10px",
             fontFamily: "Oswald, sans-serif",
             textTransform: "uppercase",
             fontWeight: 900

@@ -7,7 +7,7 @@ const A2_services = () => {
     return(
         <div className="a2_services_container">
             {/* <BigTitle className="a2_services_title"  title="CIP Qualifications" size="bg" color="rgb(1,161,231)" /> */}
-            <header className="a2_services_banner">
+            <header className="a2_services_banner a5_contact_banner" style={{padding: 0}}>
                 <div className="a2_services_box">
                     <BigTitle 
                         className="a2_services_title"  

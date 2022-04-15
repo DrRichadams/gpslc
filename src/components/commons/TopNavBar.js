@@ -45,6 +45,7 @@ const TopNavBar = () => {
                                     className={ item.active ? "openMainLink openMainLink_open" : "openMainLink" }
                                     onClick={() => {
                                         triggerMenuItems(item.id)
+                                        navigate(item.path)
                                     }}
                                     style={{
                                         color: item.active ? "#01a1e7":"#01050f"

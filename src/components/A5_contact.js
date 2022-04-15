@@ -42,8 +42,8 @@ const A5_contact = () => {
                             </div>
                         </div>
                     ))
-                }
-            </div>
+                } 
+            </div> 
         </div>
     )
 }

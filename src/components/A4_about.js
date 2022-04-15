@@ -13,16 +13,18 @@ const A4_about = () => {
         { id: uuidv4(), pic_dir: "left", img_src: "resources/our_expertise", title: "Our Expertise", story: `Our expertise in understanding the underlying world-class procurement practices gives us a competitive edge in providing our clients with customised solutions that meet their specific procurement needs. We believe in continuous improvement, we will continue to gain prominence and a remarkable reputation among our clients through our professional services.`, },
         { id: uuidv4(), pic_dir: "right", img_src: "resources/why_us", title: "Why Us?", story: `Our portfolio of training programmes will help business and supply chain professionals to accelerate their learning to deliver strategic and sustainable value in their job roles. Our training programmes suit individuals at all levels and provides the best training for any organisation’s staff. At Global Procurement Supply & Logistics Centre we offer you:`, list: [ "Higher service and quality", "Higher customer satisfaction", "Increased sales", "Higher levels of profit", "Higher shareholder returns", ] },
     ])
-    return(
+    return( 
         <div className="a3_about_container">
             <div className="a3_about_us_banner">
                 <img src={process.env.PUBLIC_URL + `/resources/about_us_banner.png`} alt="" />
                 <div className="a3_about_banner_content">
-                    <BigTitle
-                    title="About Us"
-                    size="bg"
-                    color="#fff" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iste impedit, doloremque, blanditiis expedita nihil perferendis officiis repellat doloribus excepturi possimus rerum est velit nam.</p>
+                    <div className="a4_about_main_title">
+                        <BigTitle
+                        title="About Us"
+                        size="vbg" 
+                        color="#fff" />
+                    </div>
+                    <p className="a4_about_story">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum iste impedit, doloremque, blanditiis expedita nihil perferendis officiis repellat doloribus excepturi possimus rerum est velit nam.</p>
                 </div>
             </div>
             <div className="home_about_container">

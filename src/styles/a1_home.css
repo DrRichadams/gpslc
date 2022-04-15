@@ -12,6 +12,7 @@
     padding-right: 18px; 
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
  
 .apply_btn {
@@ -175,6 +176,34 @@
     .banner_message_container h3 {
         text-align: center;
     }
+}
+
+@keyframes animateText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+}
+
+.csc_title_origin {
+    transform: translateX(-100%);
+    animation: animateText 0.6s cubic-bezier(1,-0.99, 0, 1.83) forwards;
+}
+.csc_title_0 {
+    transform: translateX(150%);
+    animation: animateText 0.6s cubic-bezier(1,-0.99, 0, 1.83) forwards;
+}
+.csc_title {
+    transform: translateX(150%);
+    animation: animateText 0.6s cubic-bezier(1,-0.99, 0, 1.83) forwards;
+}
+.apply_animated {
+    transform: translateY(400%);
+    animation: animateText 0.6s cubic-bezier(1,-0.99, 0, 1.83) forwards;
 }
 
 @media (min-width: 680px) {

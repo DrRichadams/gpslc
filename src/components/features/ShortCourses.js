@@ -82,7 +82,7 @@ const ShortCourses = () => {
                 <p className="short_courses_story">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ab quas suscipit ipsum tenetur quaerat, enim, doloremque veritatis, reprehenderit obcaecati eligendi voluptatem modi fugiat laudantium expedita odit officiis eius illo?
                 </p>
-                <button className="short_courses_part1_btn">See all short courses</button>
+                <button className="short_courses_part1_btn">Apply for a short course</button>
             </div>
             <div className="short_courses_part2a">
                 {

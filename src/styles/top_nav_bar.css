@@ -68,7 +68,7 @@
     bottom: 0;
     width: 0%;
     height: 100%;
-    background: linear-gradient(45deg, rgba(1, 162, 231, 0.829), #01050fe8);
+    background: linear-gradient(45deg, rgba(0, 111, 158, 0.979), #01050f);
     overflow: hidden;
     z-index: 100;
 }
@@ -167,6 +167,8 @@
     flex-wrap: wrap; */
     display: grid;
     grid-template-columns: 200px 4fr;
+    position: relative;
+    z-index: 100;
 }
 
 .main_nav_brand {
@@ -195,7 +197,7 @@
 .main_nav_btn {
     border: 2px solid rgb(1, 161, 231);;
     border-radius: 6px;
-    padding: 8px 12px;
+    padding: 6px 8px;
     margin-right: 8px;
     font-family: Quicksand;
     font-weight: 600;
@@ -246,7 +248,7 @@
 .openMainLink {
     list-style: none;
     font-family: Quicksand, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     margin-right: 8px;
     /* background-color: red; */
@@ -293,10 +295,16 @@
         display: none;
     }
 
-    .accounts_icon {
+    /* .accounts_icon {
         color: rgb(1, 161, 231);
         margin-right: 12px;
         display: block;
+    } */
+    .mobile_nav_bar {
+        display: flex;
+    }
+    .main_nav_bar {
+        display: none;
     }
 }
 @media (max-width: 760px) {
