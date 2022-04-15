@@ -55,7 +55,7 @@ const A3_events = () => {
                     <h3 className="a3_events_banner_title">Something not to miss</h3>
                     <p className="a3_events_banner_story">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor eius voluptatibus totam, molestiae quaerat vel aliquid.</p>
                 </div>
-            </div>
+            </div> 
             <div className="up_events_title const_title_color">Up Coming Events</div>
                 <div className="up_event_box">
                 {

@@ -13,6 +13,9 @@ import "./apply_now.css"
 import "./short_courses.css"
 import "./cips_qualifications.css"
 import "./picture_content_pair.css"
+import "./super_factions/sign_up.css"
+import "./super_factions/apply.css"
+import "./super_factions/login.css"
 
 const Styles_importer = () => {
     return null

@@ -4,6 +4,9 @@ import { v4 as uuidv4 } from "uuid"
 import { CgArrowLongRight } from "react-icons/cg"
 import { BiMenu } from "react-icons/bi"
 import { FiX, FiPlus, FiMinus, FiEdit, FiLock, FiCornerUpRight } from "react-icons/fi"
+import SignUp from "../super_factions/SignUp"
+import Apply from "../super_factions/Apply"
+import Login from "../super_factions/Login"
 
 const TopNavBar = () => {
 
@@ -33,8 +36,28 @@ const TopNavBar = () => {
         setMenuItems([ ...tempMenuIems ])
     }
 
+    const [ active, setActive ] = useState({
+        signup: false,
+        apply: false,
+        login: false,
+    })
+
+    const handleNavBtns = (p) => {
+        if(p === "apply") setActive({...active, apply: true})
+        if(p === "signUp") setActive({...active, signup: true})
+        if(p === "login") setActive({...active, login: true})
+        if(p === "opose") setActive({
+            signup: false,
+            apply: false,
+            login: false,
+        })
+    }
+
     return( 
         <div className="top_nav_bar_container">
+            <SignUp active = {active.signup} handleNavBtns = {handleNavBtns} />
+            <Apply active = {active.apply} handleNavBtns = {handleNavBtns} />
+            <Login active = {active.login} handleNavBtns = {handleNavBtns} />
             <div className="main_nav_bar">
                 <div className="main_nav_brand"><img src={process.env.PUBLIC_URL + "/brand/logo.png"} alt="" /></div>
                 <nav className="main_nav_menu_items">
@@ -46,6 +69,7 @@ const TopNavBar = () => {
                                     onClick={() => {
                                         triggerMenuItems(item.id)
                                         navigate(item.path)
+                                        // handleNavBtns(item.path)
                                     }}
                                     style={{
                                         color: item.active ? "#01a1e7":"#01050f"
@@ -58,7 +82,12 @@ const TopNavBar = () => {
                     <div className="mnmi_btns">
                         {
                             main_nav_items_btns.map((item, index) => (
-                                <button className={`main_nav_btn ${item.path}`}>
+                                <button 
+                                    className={`main_nav_btn ${item.path}`}
+                                    onClick={() => {
+                                        // navigate(item.path)
+                                        handleNavBtns(item.path)
+                                    }}>
                                     {item.name}
                                     {
                                         item.path === "apply" 
@@ -82,7 +111,7 @@ const TopNavBar = () => {
                         {
                             menuItems.map((item, index) => (
                                 <div className={item.type == "link" ? "mcmc_box" : "mcmc_btn"} onClick={() => {
-                                    navigate(`/${item.path}`)
+                                    item.type === "link" ? navigate(`/${item.path}`) : handleNavBtns(item.path)                                  
                                     triggerMenuItems(item.id)
                                     setOpenMenu(false)
                                 }}>
