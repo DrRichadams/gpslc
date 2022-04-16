@@ -3,6 +3,7 @@
     background: linear-gradient(rgb(255, 255, 255), rgb(1, 161, 231));
     width: 100%;
     min-height: 100%;
+    /* position: absolute; */
     position: fixed;
     top: 0;
     left: 0;
@@ -12,7 +13,125 @@
 
     transform: translateY(100%);
     display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 80px;
+    /* padding: 15px; */
+} 
+
+.apply_progress_section {
+    /* padding: 70px 50px; */
+}
+
+.progress_box_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    pointer-events: none;
+}
+
+
+
+
+.progress_number {
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    /* padding: 15px; */
+    font-family: Lato, sans-serif;
+    font-weight: 900;
+    position: relative;
+    z-index: 10;
+}
+
+.progress_number p {
+    pointer-events: none;
+}
+.progress_title {
+    pointer-events: none;
+}
+
+/* .progress_number::after {
+    height: 105px;
+    width: 3px;
+    background-color: #fff;
+    content: "";
+    position: absolute;
+    bottom: -200%;
+} */
+
+
+/* .apply_progress_section:last-child ~ .progress_number::after {
+    height: 0;
+    width: 0;
+} */
+
+.progress_number p {
+    position: relative;
+    z-index: 100;
+}
+
+.progress_title {
+    font-family: Lato, sans-serif;
+    font-weight: 600;
+    padding-left: 15px;
+    color: #fff;
+}
+
+.apply_details_section {
+    /* overflow-y: scroll; */
+    background-color: #fff;
+    padding: 70px 150px;
+    border-radius: 8px;
+}
+
+.apply_details_title {
+    margin-bottom: 25px;
+    font-family: Oswald, sans-serif;
+    font-size: 25px;
+}
+
+.apply_details_btns {
+    display: flex;
+    gap: 12px;
+}
+
+.apply_details_btns button {
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    flex: 1;
+    border-radius: 4px;
+    /* background-color: transparent; */
+    text-transform: uppercase;
+    font-family: Lato, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.apply_abort {
+    background-color: orangered;
+    color: #fff;
+}
+.apply_prev {
+    background-color: yellow;
+    color: #111;
+}
+.apply_next {
+    background-color: rgb(1, 161, 231);
+    color: #fff;
+}
+
+.apply_abort_icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
