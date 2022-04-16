@@ -115,18 +115,32 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+    cursor: pointer;
 }
 
 .apply_abort {
-    background-color: orangered;
-    color: #fff;
+    background-color: transparent;
+    color: orangered;
+}
+.apply_abort:hover {
+    background-color: transparent;
+    color: #111;
 }
 .apply_prev {
     background-color: yellow;
     color: #111;
 }
+.apply_prev:hover {
+    background-color: #111;
+    color: yellow;
+}
 .apply_next {
     background-color: rgb(1, 161, 231);
+    color: #fff;
+}
+
+.apply_next:hover {
+    background-color: rgb(0, 93, 133);
     color: #fff;
 }
 

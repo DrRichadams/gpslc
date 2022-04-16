@@ -10,7 +10,7 @@
     flex-direction: column;
     gap: 40px;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
 }
 
 .up_events_title {
@@ -167,7 +167,7 @@
     margin-left: 8px;
 }
 
-.up_event_box {
+.up_event_box_home {
     min-height: 90vh;
     position: relative;
 }

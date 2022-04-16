@@ -64,7 +64,7 @@ const UpcomingEvents = () => {
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus illum ullam perspiciatis at laboriosam voluptate molestiae vero suscipit atque reiciendis dicta, beatae placeat nobis aperiam aliquid nostrum aut error expedita.</p>
                     <button className="up_events_btn_more">Explore Events</button>
                 </div>
-               <div className="up_event_box">
+               <div className="up_event_box_home"> 
                 {
                     events.map((item, index) => (
                         <div 

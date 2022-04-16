@@ -71,10 +71,36 @@
     border-left: 5px solid rgb(1, 161, 231);
 }
 
-.input_box {
+.input_field {
+    margin-bottom: 30px;
     position: relative;
     width: 300px;
     height: 46px;
+}
+
+.input_field select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border: 1px solid rgb(1, 161, 231);
+    background: transparent;
+    padding: 10px;
+    border-radius: 4px;
+    outline: none;
+    font-size: 16px;
+    color: #111;
+    font-weight: 300;
+}
+
+.file_input_box input {
+    margin-top: 12px;
+}
+
+.input_box {
+    position: relative;
+    width: 300px;
+    height: 46px; 
     margin-bottom: 30px;
 }
 
