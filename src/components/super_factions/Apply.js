@@ -16,7 +16,7 @@ const MainApply = ({active, handleNavBtns}) => {
                 { id: uuidv4(), name: "Previous Surname", value: "", field_type: "textbox", },
                 { id: uuidv4(), name: "Marital Status", value: "", field_type: "selectbox",  inner_list: [ { id: uuidv4(), data: "Married", }, { id: uuidv4(), data: "Single", }, { id: uuidv4(), data: "Divorced", }, ]},
                 { id: uuidv4(), name: "Date of birth", value: "", field_type: "textbox", },
-                { id: uuidv4(), name: "Place of birth", value: "", field_type: "textbox", },
+                // { id: uuidv4(), name: "Place of birth", value: "", field_type: "textbox", },
                 { id: uuidv4(), name: "Gender", value: "", field_type: "selectbox",  inner_list: [ { id: uuidv4(), data: "Male" }, { id: uuidv4(), data: "Female" }, ] },
             ],
          },
@@ -113,8 +113,8 @@ const MainApply = ({active, handleNavBtns}) => {
                 {
                     all_details.map((item, index) => (
                         <div className="apply_details_box" style={{ display: index + 1 === current ? "block":"none" }}>
-                            {/* <h3 className="apply_details_small_title">online application</h3> */}
-                            {/* <h3 className="apply_details_steps">Step: {index + 1} / {all_details.length}</h3> */}
+                            <h3 className="apply_details_small_title">online application</h3>
+                            <h3 className="apply_details_steps">Step: {index + 1} / {all_details.length}</h3>
                             <h3 className="apply_details_title">{item.display_type}</h3>
                             <div className="apply_details_inputs">
                                 {
